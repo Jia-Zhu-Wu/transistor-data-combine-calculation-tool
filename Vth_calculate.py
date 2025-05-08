@@ -8,13 +8,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 讀取 Excel 檔案，假設檔案中有 "V_Gate" 與 "I_Drain" 兩個欄位
+# 讀取 Excel 檔案中有 "V_Gate" 與 "I_Drain" 兩個欄位
 excel_input = r"C:\Users\user\OneDrive\桌面\experiment\2025.04.21\bottom_a_algao_100nm_beta_30nm_top_beta_algao_20nm\Al_34%\Sn_0.1M\VDS_30V.xls"
 df = pd.read_excel(excel_input)
 VG_data = df['V_Gate']
 ID_data = df['I_Drain']
 
-# 繪製整體的 ID-VG 曲線，方便您參考選點
+# 繪製整體的 ID-VG 曲線，方便參考選點
 plt.figure(figsize=(8, 6))
 plt.plot(VG_data, ID_data, 'b-', label='ID vs VG')
 plt.xlabel('VG')
