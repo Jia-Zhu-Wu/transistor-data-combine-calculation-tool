@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 讀取 Excel 檔案中有 "V_Gate" 與 "I_Drain" 兩個欄位
-excel_input = r"C:\Users\user\OneDrive\桌面\VDS_30V.xls"
+excel_input = r"C:\Users\user\OneDrive\桌面\experiment\2025.04.21\bottom_a_algao_100nm_beta_50nm_top_beta_algao_20nm\Sn_0.1M_35sec\VDS_30V.xls"
 df = pd.read_excel(excel_input)
 VG_data = df['V_Gate']
 ID_data = df['I_Drain']
